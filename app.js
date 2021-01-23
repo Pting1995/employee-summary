@@ -11,6 +11,78 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 
+// manager
+inquirer.prompt([
+    {
+        type: "input",
+        message: "What is the manager's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is the manager's ID?",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "What is the manager's email?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the manager's office number?",
+        name: "officeNumber"
+    }
+])
+// engineer
+inquirer.prompt([
+    {
+        type: "input",
+        message: "What is the engineer's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is the engineer's ID?",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "What is the engineer's email?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the engineer's GitHub?",
+        name: "github"
+    }
+])
+// intern
+inquirer.prompt([
+    {
+        type: "input",
+        message: "What is the intern's name?",
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is the intern's ID?",
+        name: "id"
+    },
+    {
+        type: "input",
+        message: "What is the intern's email?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is the intern's college?",
+        name: "school"
+    }
+])
+
+// ask what role next
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
