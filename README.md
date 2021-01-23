@@ -30,3 +30,30 @@ const askRole = () => {
     })
 }
 ```
+
+## Built With
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [JS](https://www.javascript.com/)
+* [GitHub](https://github.com/)
+* [Git](https://git-scm.com/)
+* [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+* [node.js](https://nodejs.org/en/)
+* [inquirer](https://www.npmjs.com/package/inquirer)
+* [npm](https://www.npmjs.com/)
+
+## Authors
+
+* Peter Ting
+
+- [Link to Github](https://github.com/Pting1995)
+- [Link to LinkedIn](https://www.linkedin.com/in/pting002/)
+- [Link to Portfolio](https://pting1995.github.io/Portfolio-mk2/)
+
+## License
+
+This project is licensed under the MIT License 
+
+## Acknowledgments
+
+* Thank you to UC Berkeley's Extension Bootcamp for giving me the opportunity to work on this project!
