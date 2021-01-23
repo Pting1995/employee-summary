@@ -43,6 +43,26 @@ promptManager()
     .then(data => teamArr.push(new Manager(data.name, data.id, data.email, data.officeNumber)))
     .then(() => askRole())
 
+const askRole = () => {
+    inquirer.prompt([
+        {
+            type: "list",
+            message: "What is your new team member's role?",
+            name: "role",
+            choices: ["Engineer", "Intern", "No more teammates!"]
+        }
+    ])
+    .then(data => {
+        switch (data.role) {
+            case "Engineer": promptEng()
+                break;
+            case "Intern": promptIntern()
+                break;
+            case "No more teammates!":
+                printArr();
+        }
+    })
+}
 const promptEng = () => {
     inquirer.prompt([
         {
@@ -96,6 +116,10 @@ const promptIntern = () => {
     ])
     .then(data => teamArr.push(new Intern(data.name, data.id, data.email, data.school)))
     .then(() => askRole())
+}
+
+const printArr = () => {
+    writeFileAsync("team.html", render(teamArr))
 }
 
 // ask what role next
