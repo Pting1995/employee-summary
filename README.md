@@ -1,4 +1,4 @@
-# Weather Dashboard
+# Employee Summary
 
 [Demo](https://drive.google.com/file/d/1oQQVfbCexIaHsc3O9pRnEgJlKSFZLH_V/view)
 
